@@ -12,3 +12,4 @@
     "angular-mocks": "~1.2.15"
   }
 }
+//TODO: Probably need to add dependencies per bower install calls that were run?
