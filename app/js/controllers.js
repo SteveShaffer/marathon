@@ -17,13 +17,6 @@ angular.module('myApp.controllers', [])
         finish(runner_id, result);
       }
     };
-    $scope.gridOptions = {
-      data: 'runners',
-      enableCellSelection: true,
-      enableRowSelection: false,
-      enableCellEdit: true
-//      columnDefs: [{field: 'marathonResult', displayName: 'Result', enableCellEdit: false}]
-    };
     $scope.run = function() {
       for (var i=0; i<$scope.runners.length; i++) {  //TODO: Use angular.forEach?
         $scope.race.track(i, function(runner_id, result) {
